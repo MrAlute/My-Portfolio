@@ -1,7 +1,12 @@
-# ABOUT THE PORTFOLIO
+# ABOUT THE PROJECT
 
-This portfolio contains all the details about me.
+This project is my portfolio website which contains all the details about me.
 
-it has a home section, about section, Portfolio section, and a contact section
+it has a home section, 
+about section, 
+Portfolio section, 
+and a contact section
 
 it's a one page HTML file
+
+Languages used includes: HTML, CSS and JavaScript.
