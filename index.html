@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abi Chioduye - Official Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+
+    <style>
+        .alert_modal {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 99999999999999999999;
+            background-color: rgba(0, 0, 0, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Calibri;
+            font-weight: 900;
+        }
+
+        .alert_container {
+            width: 90%;
+            background-color: white;
+            border-radius: 10px;
+            animation: 0.5s 1 alert_container_animation;
+            -webkit-animation: 35s 1 alert_container_animation;
+        }
+
+        @media (min-width: 600px) {
+            .alert_container {
+                width: 350px;
+            }
+        }
+
+        @keyframes alert_container_animation {
+            0% {
+                transform: scale(0.5);
+            }
+
+            1% {
+                transform: scale(1.1);
+            }
+
+            2% {
+                transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes alert_container_animation {
+            0% {
+                transform: scale(0.5);
+            }
+
+            1% {
+                transform: scale(1.1);
+            }
+
+            2% {
+                transform: scale(1);
+            }
+        }
+
+        .alert_heading {
+            padding: 20px;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+        }
+
+        .alert_details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .alert_details h2 {
+            font-size: 20px;
+        }
+
+        .alert_details p {
+            font-size: 14px;
+            color: #525252;
+            line-height: 1.5em;
+            margin-top: 5px;
+        }
+
+        .alert_footer {
+            background-color: #E3E3E3;
+            padding: 10px;
+            border-radius: 0px 0px 10px 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .alert_footer span {
+            color: #979797;
+            cursor: pointer;
+        }
+
+        .alert_footer span:hover {
+            color: #353535;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!---- Page Loader Start ---->
+    <div class="page-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!---- Page Loader End ---->
+
+    <!---- Background circles Start ---->
+    <div class="bg-circles">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+    </div>
+    <!---- Background circles End ---->
+
+
+    <!--    Overlay Start   -->
+    <div class="overlay">
+    </div>
+    <!--    Overlay End   -->
+
+    <!-- Main Start -->
+    <div class="main hidden">
+
+        <!-- Header Start-->
+        <header class="header">
+            <div class="container">
+                <div class="row flex-end">
+                    <button type="button" class="nav-toggler">
+                        <span></span>
+                    </button>
+                    <div class="nav">
+                        <div class="nav-inner">
+                            <ul>
+                                <li><a href="#home" class="nav-item link-item">home</a></li>
+                                <li><a href="#about" class="nav-item link-item">about</a></li>
+                                <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+                                <li><a href="#contact" class="nav-item link-item">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End-->
+
+        <!-- Home Section Start-->
+        <section class="home-section align-items-center" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="home-text">
+                        <p>Hello, I'm</p>
+                        <h1>Abi Chioduye</h1>
+                        <h2>I am a <span class="typing">Website developer</span> </h2>
+                        <p class="alute">I am the founder of <span>Alute Digital World.</span> A brand that offers
+                            digital services that includes: Website design and developement, Mobile App developement,
+                            Graphic and Logo design, Digital marketing and more.</p>
+                        <a href="#about" class="btn link-item">know about me</a>
+                        <a href="#portfolio" class="btn link-item">portfolio</a>
+                    </div>
+                    <div class="home-img">
+                        <div class="img-box">
+                            <img src="images/222.png" alt="profile-img">
+                        </div>
+                        <div class="social-links1">
+                            <a href="https://www.facebook.com/Mr.alute/" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.tiktok.com/@mr_alute" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://twitter.com/Mr_Alute" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/mr_alute/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/abi-chioduye-181495240/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=2349068839288&text=Hello%20Abi%20Chioduye%2C%0A%0AAm%20reaching%20you%20from%20your%20portfolio%20website.%0Amy%20name%20is%20__"
+                                target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://github.com/MrAlute" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home Section End-->
+
+        <!-- About Section Start-->
+        <section class="about-section sec-padding" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>about me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-img">
+                        <div class="img-box">
+                            <img src="images/Alute-img.png" alt="about img">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I am someone that love using my skills and knowledge to impact lives. i believe everyone has
+                            the ability to achieve anything in life if only they are willing and ready to plan, focus,
+                            be committed and most importantly be patient to achieve it! Always living up to
+                            expectations.</p>
+                        <h3>skills</h3>
+                        <div class="skills">
+                            <div class="skill-item">Web Development</div>
+                            <div class="skill-item">Graphic design</div>
+                            <div class="skill-item">Digital Marketing</div>
+                        </div>
+                        <h3>soft skills</h3>
+                        <div class="skills">
+                            <div class="skill-item">Problem solving</div>
+                            <div class="skill-item">Time management</div>
+                            <div class="skill-item">Leadership</div>
+                            <div class="skill-item">Critical thinking</div>
+                            <div class="skill-item">Decision making</div>
+                            <div class="skill-item">Creativity</div>
+                            <div class="skill-item">Human management</div>
+                            <div class="skill-item">Adaptability</div>
+                            <div class="skill-item">Friendliness</div>
+                            <div class="skill-item">Reliability</div>
+                            <div class="skill-item">Negotiation</div>
+                        </div>
+                        <h3>Programming Languages</h3>
+                        <div class="skills">
+                            <div class="skill-item">HTML</div>
+                            <div class="skill-item">CSS</div>
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">Reactjs</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">Django</div>
+                            <div class="skill-item">FastAPI</div>
+                        </div>
+                        <h3>Hoobies</h3>
+                        <div class="skills">
+                            <div class="skill-item">Coding</div>
+                            <div class="skill-item">Reading</div>
+                            <div class="skill-item">Music</div>
+                            <div class="skill-item">Football</div>
+                        </div>
+
+                        <div class="about-tabs">
+                            <button type="button" class="tab-item active" data-target="#education">education</button>
+                            <button type="button" class="tab-item" data-target="#experience">experience</button>
+                        </div>
+
+                        <!-- Education Start-->
+                        <div class="tab-content active" id="education">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="date">2016 - 2022</span>
+                                    <h4>bachelor of science - <span>rivers state university</span></h4>
+                                    <p>Studied Surveying and Geomatics. !</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2011 - 2013</span>
+                                    <h4>Comprehensive Secondary School Odiemeerenyi. Ahoada - <span>Rivers State</span>
+                                    </h4>
+                                    <p>Completed my senior secondary school with a West African Examination Certificate
+                                        (W.A.E.C)!</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2009 - 2011</span>
+                                    <h4>The Light Foundation School, Ahoada - <span>Rivers State</span></h4>
+                                    <p>Completed my jenior secondary school with a West African Examination Certificate
+                                        (Jenior W.A.E.C)!</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2007 - 2009</span>
+                                    <h4>Adventist Comprehensive Secondary School, Elele - <span>Rivers State</span></h4>
+                                    <p>Attended this great school and obtained the experience of a boarding school for
+                                        two years!</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2002 - 2007</span>
+                                    <h4>Sonnicity Universal School, Ahoada - <span>Rivers State</span></h4>
+                                    <p>Completed my elementary education at this awesome school with the First School
+                                        Leaving Certificate.!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Education End-->
+
+                        <!-- Experience Start-->
+                        <div class="tab-content" id="experience">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="date">2022 - date</span>
+                                    <h4>web developer - <span>alute digital world</span></h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet fuga aut
+                                        veritatis.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2022 - date</span>
+                                    <h4>web developer - <span>alute digital world</span></h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet fuga aut
+                                        veritatis.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2022 - date</span>
+                                    <h4>web developer - <span>alute digital world</span></h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet fuga aut
+                                        veritatis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Experience End-->
+
+                        <a href="resume/my-resume.pdf" target="_blank" class="btn" download>download cv</a>
+                        <a href="#contact" class="btn link-item">contact me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End-->
+
+        <!-- Portfolio Section Start-->
+        <section class="portfolio-section sec-padding" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>some web developement projects</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Portfolio item start-->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="images/portfolio-1.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">flexbox practice website</h3>
+                        <button type="button" class="btn view-project-btn">view project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>This was a website i built in order to practice and understand how the CSS Flexbox
+                                    layout works. Flexbox was used for the alignment and position of items on the
+                                    website.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created -<span>24 july 2022</span></li>
+                                    <li>Languages used -<span>HTML, CSS</span></li>
+                                    <li>Role -<span>Frontend development</span></li>
+                                    <li>view online -<span><a href="#" target="_blank">(Wasn't hosted)</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="images/portfolio-1.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">flexbox practice website</h3>
+                        <button type="button" class="btn view-project-btn">view project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum similique ad aperiam
+                                    cumque earum magnam quia sunt voluptatem, quis recusandae voluptate voluptas, minus
+                                    sapiente numquam consectetur ea aliquid delectus corrupti.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created -<span>24 july 2022</span></li>
+                                    <li>Languages used -<span>HTML, CSS</span></li>
+                                    <li>Role -<span>Frontend development</span></li>
+                                    <li>view online -<span><a href="#" target="_blank">(Wasn't hosted)</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="images/portfolio-1.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">flexbox practice website</h3>
+                        <button type="button" class="btn view-project-btn">view project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum similique ad aperiam
+                                    cumque earum magnam quia sunt voluptatem, quis recusandae voluptate voluptas, minus
+                                    sapiente numquam consectetur ea aliquid delectus corrupti.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created -<span>24 july 2022</span></li>
+                                    <li>Languages used -<span>HTML, CSS</span></li>
+                                    <li>Role -<span>Frontend development</span></li>
+                                    <li>view online -<span><a href="#" target="_blank">(Wasn't hosted)</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="images/portfolio-1.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">flexbox practice website</h3>
+                        <button type="button" class="btn view-project-btn">view project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum similique ad aperiam
+                                    cumque earum magnam quia sunt voluptatem, quis recusandae voluptate voluptas, minus
+                                    sapiente numquam consectetur ea aliquid delectus corrupti.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created -<span>24 july 2022</span></li>
+                                    <li>Languages used -<span>HTML, CSS</span></li>
+                                    <li>Role -<span>Frontend development</span></li>
+                                    <li>view online -<span><a href="#" target="_blank">(Wasn't hosted)</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="images/portfolio-1.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">flexbox practice website</h3>
+                        <button type="button" class="btn view-project-btn">view project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum similique ad aperiam
+                                    cumque earum magnam quia sunt voluptatem, quis recusandae voluptate voluptas, minus
+                                    sapiente numquam consectetur ea aliquid delectus corrupti.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created -<span>24 july 2022</span></li>
+                                    <li>Languages used -<span>HTML, CSS</span></li>
+                                    <li>Role -<span>Frontend development</span></li>
+                                    <li>view online -<span><a href="#" target="_blank">(Wasn't hosted)</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="images/portfolio-1.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">flexbox practice website</h3>
+                        <button type="button" class="btn view-project-btn">view project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum similique ad aperiam
+                                    cumque earum magnam quia sunt voluptatem, quis recusandae voluptate voluptas, minus
+                                    sapiente numquam consectetur ea aliquid delectus corrupti.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created -<span>24 july 2022</span></li>
+                                    <li>Languages used -<span>HTML, CSS</span></li>
+                                    <li>Role -<span>Frontend development</span></li>
+                                    <li>view online -<span><a href="#" target="_blank">(Wasn't hosted)</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item end-->
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section End-->
+
+        <!-- Contact Section Start-->
+        <section class="contact-section sec-padding" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>contact me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact-form">
+                        <form id="contact-form" action="https://formsubmit.co/abichioduye@gmail.com" method="POST">
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Your Full Name" class="input-control" id="name"
+                                        name="name" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Your email address" class="input-control" id="email"
+                                        name="email" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Subject" class="input-control" id="subject"
+                                        name="subject" required>
+                                </div>
+                                <div class="input-group">
+                                    <textarea placeholder="Your Message" class="input-control" id="message"
+                                        name="message" required></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <h3>Email</h3>
+                            <p>Abichioduye@gmail.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>Phone</h3>
+                            <p>+234 903 5853 499</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>follow me</h3>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/Mr.alute/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.tiktok.com/@mr_alute" target="_blank"><i
+                                        class="fab fa-tiktok"></i></a>
+                                <a href="https://twitter.com/Mr_Alute" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/mr_alute/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/abi-chioduye-181495240/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=2349068839288&text=Hello%20Abi%20Chioduye%2C%0A%0AAm%20reaching%20you%20from%20your%20portfolio%20website.%0Amy%20name%20is%20__"
+                                    target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://github.com/MrAlute" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section Ends-->
+
+    </div>
+    <!-- Main End -->
+
+    <!-- Portfolio item details popup start-->
+    <div class="portfolio-popup">
+        <div class="pp-inner">
+            <div class="pp-content">
+                <div class="pp-header">
+                    <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+                    <div class="pp-thumbnail">
+                        <img src="images/portfolio-1.png" alt="">
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="pp-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item details popup End-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
